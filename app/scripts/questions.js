@@ -1,5 +1,5 @@
 var data =
-[{
+{
 
 
   "colors": {
@@ -14,4 +14,4 @@ var data =
   }
 
 
-}];
+};
