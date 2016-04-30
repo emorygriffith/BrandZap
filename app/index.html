@@ -16,7 +16,7 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/emory.css">
+    <link rel="stylesheet" href="styles/custom.css">
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -36,10 +36,7 @@
       </div>
 
       <div class="app jumbotron">
-
       </div>
-
-
 
       <div class="footer">
         <p>Made with ♥ in Cambridge</p>
@@ -48,60 +45,91 @@
 
 
 
+<!--Templates-->
 
     <script type="text/template" id="questions-template">
-      <section>
+      <section class="question">
         <h4>Question One</h4>
         <p>How do you want your brand to feel?</p>
-        <form>
-          <input type="radio" name="gender" value="male" checked> Male<br>
-          <input type="radio" name="gender" value="female"> Female<br>
-          <input type="radio" name="gender" value="other"> Other
+        <form class="q1">
+          <input type="checkbox" name="gender" value="fresh"> Fresh<br>
+          <input type="checkbox" name="gender" value="localAndCommunity"> Local & Community<br>
+          <input type="checkbox" name="gender" value="friendly"> Friendly <br>
+          <input type="checkbox" name="gender" value="funAndQuirky"> Fun & Quirky <br>
+          <input type="checkbox" name="gender" value="classic"> Classic <br>
+          <input type="checkbox" name="gender" value="approachable"> Approachable <br>
+          <input type="checkbox" name="gender" value="sleek"> Sleek <br>
+          <input type="checkbox" name="gender" value="powerful"> Powerful <br>
+          <input type="checkbox" name="gender" value="polishedAndLuxurious"> Polished & Luxurious <br>
+          <input type="checkbox" name="gender" value="honestAndHardworking"> Honest & Hardworking <br>
+          <input type="checkbox" name="gender" value="strength"> Strength <br>
+          <input type="checkbox" name="gender" value="functionalAndNoNonsense"> Functional & No-Nonsense <br>
+          <input type="checkbox" name="gender" value="esoteric"> Esoteric <br>
+          <input type="checkbox" name="gender" value="attitude"> Attitude <br>
+          <input type="checkbox" name="gender" value="swagger"> Swagger <br>
         </form>
       </section>
 
 
+      <hr>
 
-
-      <section>
+      <section class="question">
         <h4>Question Two</h4>
         <p>How do you want your design to feel?</p>
-        <form>
-          <input type="radio" name="gender" value="male" checked> Male<br>
-          <input type="radio" name="gender" value="female"> Female<br>
-          <input type="radio" name="gender" value="other"> Other
+        <form class="q2">
+          <input type="checkbox" name="gender" value="cleanAndSimple"> Clean & Simple<br>
+          <input type="checkbox" name="gender" value="wellOrgWithLotsOfInfo"> Well-Organized With Lots of Information/Options<br>
+          <input type="checkbox" name="gender" value="sophisticated"> Sophisticated & Attention to Detail <br>
+          <input type="checkbox" name="gender" value="powerful"> Powerful <br>
+          <input type="checkbox" name="gender" value="boldAndElectric"> Bold and Electric
         </form>
+
       </section>
 
-      <section>
+<hr>
+
+      <section class="question">
         <h4>Question Three</h4>
         <p>With which of these words does your business most closely associate?</p>
-        <form>
-          <input type="radio" name="gender" value="male" checked> Male<br>
-          <input type="radio" name="gender" value="female"> Female<br>
-          <input type="radio" name="gender" value="other"> Other
+        <form class="q3">
+          <input type="checkbox" name="gender" value="luxury"> Luxury<br>
+          <input type="checkbox" name="gender" value="peerToPeer"> Peer to Peer Service<br>
+          <input type="checkbox" name="gender" value="neighborhood">Neighborhood <br>
+          <input type="checkbox" name="gender" value="informationalBlogSite"> Informational Blog/Site <br>
+          <input type="checkbox" name="gender" value="creativeService">Creative Service
         </form>
       </section>
 
-      <section>
+<hr>
+
+      <section class="question">
         <h4>Question Four</h4>
         <p>How would you describe the type of business you're in?</p>
-        <form>
-          <input type="radio" name="gender" value="male" checked> Male<br>
-          <input type="radio" name="gender" value="female"> Female<br>
-          <input type="radio" name="gender" value="other"> Other
+        <form class="q4">
+          <input type="checkbox" name="gender" value="app">App<br>
+          <input type="checkbox" name="gender" value="restaurant"> Restaurant<br>
+          <input type="checkbox" name="gender" value="website"> Website<br>
+          <input type="checkbox" name="gender" value="eCommerce"> E-Commerce<br>
+          <input type="checkbox" name="gender" value="brickAndMortar"> Brick & Mortar<br>
+          <input type="checkbox" name="gender" value="professionalServices"> Professional Services
         </form>
       </section>
 
-      <section>
+<hr>
+
+      <section class="question">
         <h4>Question Five</h4>
         <p>Who are your target users/customers?</p>
-        <form>
-          <input type="radio" name="gender" value="male" checked> Male<br>
-          <input type="radio" name="gender" value="female"> Female<br>
-          <input type="radio" name="gender" value="other"> Other
+        <form class="q5">
+          <input type="checkbox" name="gender" value="kids"> Kids<br>
+          <input type="checkbox" name="gender" value="teens"> Teens<br>
+          <input type="checkbox" name="gender" value="millenials"> Millenials<br>
+          <input type="checkbox" name="gender" value="parents"> Parents<br>
+          <input type="checkbox" name="gender" value="grandparents"> Grandparents<br>
         </form>
       </section>
+
+      <button class="submit">Submit</button>
 
 
     </script>
@@ -142,6 +170,8 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
+    <script src="scripts/questions.js"></script>
+    <script src="scripts/backboneCode.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>
