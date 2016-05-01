@@ -5,10 +5,12 @@ var Router = Backbone.Router.extend({
     'app': 'appView',
     'project': 'projectView',
     'results': 'resultsView',
+    'team': 'teamView',
   }
 });
 
 var router = new Router();
+
 
 
 router.on('route:home', function(){
@@ -25,4 +27,8 @@ router.on('route:projectView', function(){
 
 router.on('route:resultsView', function(){
   resultsView.render();
+});
+
+router.on('route:teamView', function(){
+  aboutTeamView.render();
 });
