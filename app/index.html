@@ -19,7 +19,7 @@
   </head>
   <body>
     <header role="banner">
-      <img id="logo-main" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32877/logo-thing.png" width="200" alt="Logo Thing main logo">
+      <a href="#"><img id="logo-main" src="https://placekitten.com/g/200/300" width="100" alt="Logo Thing main logo"></a>
     <nav id="navbar-primary" class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -34,8 +34,8 @@
         <div class="collapse navbar-collapse" id="navbar-primary-collapse">
           <ul class="nav navbar-nav">
             <li><a href="#">THE PEOPLE</a></li>
-            <li><a href="#">BRAND ZAP</a></li>
-            <li><a href="#">THE PROJECT</a></li>
+            <li><a href="#/app">BRAND ZAP</a></li>
+            <li><a href="#/project">THE PROJECT</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -56,7 +56,7 @@
 
 
 <!--Templates-->
-    <script type="text/template" id="questions-template">
+    <script type="text/template" id="app-template">
       <section class="question">
         <h4>Question One</h4>
         <p>How do you want your brand to feel?</p>
@@ -144,6 +144,17 @@
     </script>
 
 
+<!-- HONE TEMPLATE -->
+    <script type="text/template" id="home-template">HEY WE'RE HOME</script>
+    <script type="text/template" id="about-project-template">ABOUT PROJECT TEMPLATE</script>
+    <script type="text/template" id="about-team-template">ABOUT TEAM TEMPLATE</script>
+
+
+
+
+
+
+
 
 
 
@@ -180,7 +191,10 @@
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/data.js"></script>
+    <script src="scripts/routes.js"></script>
+    <script src="scripts/views.js"></script>
     <script src="scripts/backboneCode.js"></script>
+
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>
