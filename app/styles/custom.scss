@@ -8,6 +8,7 @@ font-family: 'Alegreya Sans', sans-serif;
 //Un-Pad Body
 body{
   padding-top:0px;
+  padding-bottom: 0px;
 }
 
 //Center the Header
@@ -45,4 +46,10 @@ header[role="banner"] {
 
 .main-font{
 font-family: 'Alegreya Sans', sans-serif;
+}
+
+
+.app{
+  //padding-bottom:60px;   /* Height of the footer */
+  margin-bottom:0px;
 }

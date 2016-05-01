@@ -17,33 +17,33 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
+
+
   <body>
     <header role="banner">
       <a href="#"><img id="logo-main" src="/images/bolt.svg" width="15" alt="Logo Thing main logo"></a>
-    <nav id="navbar-primary" class="navbar navbar-default" role="navigation">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-primary-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#/team">THE PEOPLE</a></li>
-            <li><a href="#/app">BRAND ZAP</a></li>
-            <li><a href="#/project">THE PROJECT</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+      <nav id="navbar-primary" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#/team">THE PEOPLE</a></li>
+              <li><a href="#/app">BRAND ZAP</a></li>
+              <li><a href="#/project">THE PROJECT</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
     </header><!-- header role="banner" -->
 
-
-    <div class="container">
 
       <div class="app jumbotron">
       </div>
@@ -51,16 +51,31 @@
       <div class="footer">
         <p>Made with ♥ in Cambridge</p>
       </div>
-    </div>
+
 
 
 
 <!--Templates-->
     <script type="text/template" id="app-template">
+
       <section class="question">
         <h4>Question One</h4>
-        <p>How do you want your brand to feel?</p>
+        <p>Who are your target users/customers?</p>
         <form class="q1">
+          <input type="checkbox" class="kids" value="kids"> Kids<br>
+          <input type="checkbox" class="teens" value="teens"> Teens<br>
+          <input type="checkbox" class="millenials" value="millenials"> Millenials<br>
+          <input type="checkbox" class="parents" value="parents"> Parents<br>
+          <input type="checkbox" class="grandparents" value="grandparents"> Grandparents<br>
+        </form>
+      </section>
+
+      <hr>
+
+       <section class="question">
+        <h4>Question Two</h4>
+        <p>How do you want your brand to feel?</p>
+        <form class="q2">
           <input type="checkbox" class="fresh" value="fresh"> Fresh<br>
           <input type="checkbox" class="friendly" value="friendly"> Friendly <br>
           <input type="checkbox" class="localAndCommunity" value="localAndCommunity"> Local & Community<br>
@@ -80,47 +95,32 @@
       </section>
 
 
-      <hr>
 
-      <section class="question">
-        <h4>Question Two</h4>
-        <p>How do you want your design to feel?</p>
-        <form class="q2">
-          <input type="checkbox" class="" value="cleanAndSimple"> Clean & Simple<br>
-          <input type="checkbox" class="" value="wellOrgWithLotsOfInfo"> Well-Organized With Lots of Information/Options<br>
-          <input type="checkbox" class="" value="sophisticated"> Sophisticated & Attention to Detail <br>
-          <input type="checkbox" class="" value="powerful"> Powerful <br>
-          <input type="checkbox" class="" value="boldAndElectric"> Bold and Electric
-        </form>
-
-      </section>
-
-<hr>
 
       <section class="question">
         <h4>Question Three</h4>
-        <p>With which of these words does your business most closely associate?</p>
+        <p>How do you want your design to feel?</p>
         <form class="q3">
-          <input type="checkbox" class="" value="luxury"> Luxury<br>
-          <input type="checkbox" class="" value="peerToPeer"> Peer to Peer Service<br>
-          <input type="checkbox" class="" value="neighborhood">Neighborhood <br>
-          <input type="checkbox" class="" value="informationalBlogSite"> Informational Blog/Site <br>
-          <input type="checkbox" class="" value="creativeService">Creative Service
+          <input type="checkbox" class="cleanAndSimple" value="cleanAndSimple"> Clean & Simple<br>
+          <input type="checkbox" class="wellOrgWithLotsOfInfo" value="wellOrgWithLotsOfInfo"> Well-Organized With Lots of Information/Options<br>
+          <input type="checkbox" class="sophisticated" value="sophisticated"> Sophisticated & Attention to Detail <br>
+          <input type="checkbox" class="powerful" value="powerful"> Powerful <br>
+          <input type="checkbox" class="boldAndElectric" value="boldAndElectric"> Bold and Electric
         </form>
+
       </section>
 
-<hr>
+ <hr>
 
       <section class="question">
         <h4>Question Four</h4>
-        <p>How would you describe the type of business you're in?</p>
+        <p>With which of these words does your business most closely associate?</p>
         <form class="q4">
-          <input type="checkbox" class="" value="app">App<br>
-          <input type="checkbox" class="" value="restaurant"> Restaurant<br>
-          <input type="checkbox" class="" value="website"> Website<br>
-          <input type="checkbox" class="" value="eCommerce"> E-Commerce<br>
-          <input type="checkbox" class="" value="brickAndMortar"> Brick & Mortar<br>
-          <input type="checkbox" class="" value="professionalServices"> Professional Services
+          <input type="checkbox" class="luxury" value="luxury"> Luxury<br>
+          <input type="checkbox" class="peerToPeer" value="peerToPeer"> Peer to Peer Service<br>
+          <input type="checkbox" class="neighborhood" value="neighborhood">Neighborhood <br>
+          <input type="checkbox" class="informationalBlogSite" value="informationalBlogSite"> Informational Blog/Site <br>
+          <input type="checkbox" class="creativeService" value="creativeService">Creative Service
         </form>
       </section>
 
@@ -128,15 +128,18 @@
 
       <section class="question">
         <h4>Question Five</h4>
-        <p>Who are your target users/customers?</p>
+        <p>How would you describe the type of business you're in?</p>
         <form class="q5">
-          <input type="checkbox" class="" value="kids"> Kids<br>
-          <input type="checkbox" class="" value="teens"> Teens<br>
-          <input type="checkbox" class="" value="millenials"> Millenials<br>
-          <input type="checkbox" class="" value="parents"> Parents<br>
-          <input type="checkbox" class="" value="grandparents"> Grandparents<br>
+          <input type="checkbox" class="application" value="application"> App<br>
+          <input type="checkbox" class="restaurant" value="restaurant"> Restaurant<br>
+          <input type="checkbox" class="website" value="website"> Website<br>
+          <input type="checkbox" class="eCommerce" value="eCommerce"> E-Commerce<br>
+          <input type="checkbox" class="brickAndMortar" value="brickAndMortar"> Brick & Mortar<br>
+          <input type="checkbox" class="professionalServices" value="professionalServices"> Professional Services
         </form>
       </section>
+
+
 
       <button class="submit">Submit</button>
 
