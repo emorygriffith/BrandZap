@@ -1,6 +1,6 @@
 $( ".submit" ).click(function() {
 
-  //QUESTION 1
+//QUESTION 1
   if ($(".fresh").is(':checked')) {
     colors[2].count++;
     colors[3].count++;
@@ -195,8 +195,6 @@ $( ".submit" ).click(function() {
   };
   if ($(".attitude").is(':checked')) {
     colors[0].count++;
-    colors[].count++;
-    colors[].count++;
 
     fonts[0].count++;
     fonts[1].count++;
@@ -231,11 +229,11 @@ $( ".submit" ).click(function() {
   var maxCopy = _.max(copy, function(x){ return x.count; });
   var maxLogo = _.max(logo, function(x){ return x.count; });
 
-  console.log(maxColor);
-  console.log(maxWireframe);
-  console.log(maxFont);
-  console.log(maxCopy);
-  console.log(maxLogo);
+  console.log("Color: " + maxColor.name + " " + maxColor.count);
+  console.log("Wireframe: " + maxWireframe.name + " " + maxWireframe.count);
+  console.log("Font: " + maxFont.name + " " + maxFont.count);
+  console.log("Copy: " + maxCopy.name + " " + maxCopy.count);
+  console.log("Logo: " + maxLogo.name + " " + maxLogo.count);
 
 
   // PUSH THE WINNERS TO THE RESULTS ARRAY
