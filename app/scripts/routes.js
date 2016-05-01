@@ -3,7 +3,8 @@ var Router = Backbone.Router.extend({
   routes: {
     '': 'home',
     'app': 'appView',
-    'project': 'projectView'
+    'project': 'projectView',
+    'results': 'resultsView',
   }
 });
 
@@ -20,4 +21,8 @@ router.on('route:appView', function(){
 
 router.on('route:projectView', function(){
   aboutProjectView.render();
+});
+
+router.on('route:resultsView', function(){
+  resultsView.render();
 });

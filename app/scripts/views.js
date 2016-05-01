@@ -12,6 +12,7 @@ var HomeView = Backbone.View.extend({
 var homeView = new HomeView();
 
 
+
 var AppView = Backbone.View.extend({
   el: '.app',
   render: function(){
@@ -25,6 +26,7 @@ var AppView = Backbone.View.extend({
 var appView = new AppView();
 
 
+
 var AboutProjectView = Backbone.View.extend({
   el: '.app',
   render: function(){
@@ -36,3 +38,15 @@ var AboutProjectView = Backbone.View.extend({
   }
 });
 var aboutProjectView = new AboutProjectView();
+
+var ResultsView = Backbone.View.extend({
+  el: '.app',
+  render: function(){
+    var template = _.template($('#results-template').html());
+    this.$el.html(template);
+  },
+  error: function(){
+    alert('error rendering view');
+  }
+});
+var resultsView = new ResultsView();
