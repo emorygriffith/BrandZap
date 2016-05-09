@@ -1,11 +1,11 @@
 
 //-------Backbone Start History------//
 Backbone.history.start();
-
-
 //-------Logic------//
 
-$( ".submit" ).click(function() {
+$(".submit").click(function() {
+
+  console.log('clicked');
 
 
   //QUESTION 1
